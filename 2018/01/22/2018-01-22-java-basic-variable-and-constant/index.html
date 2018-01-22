@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>
+        
+        Java Basic--Variable and Constant · Seraphcex&#39;s Blog
+        
+    </title>
+    <link rel="icon" href= /assets/favicon.ico>
+    <!-- TODO: 在font-face加载完毕后改变字体  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <!-- 提前加载place holder  -->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Oswald-Regular';
+            src: url(/font/Oswald-Regular.ttf);
+        }
+    </style>
+    <style type="text/css">
+        .site-intro {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+            box-shadow: -0.1rem 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+        }
+        .site-intro-placeholder {
+            position: absolute;
+            z-index: -2;
+            top: 0;
+            left: 0px;
+            width: calc(100% + 300px);
+            height: 100%;
+            background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+            background-position: center center;
+            transform: translate3d(-226px, 0, 0);
+            animation: gradient-move 2.5s ease-out 0s 1;
+        }
+        @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+    <link rel="stylesheet" href = /css/style.css?v=20171227 />
+    <script src="//cdn.staticfile.org/jquery/3.2.1/jquery.min.js" defer></script>
+    
+    <script src="/scripts/main.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+</head>
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Seraphcex&#39;s Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">Java Basic--Variable and Constant</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>Seraphcex's Blog.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-img" style="background-image: url(http://oumn0o088.bkt.clouddn.com/post-bg.jpg)"></div>
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            Java Basic--Variable and Constant
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = "/static/api/js/share.js"];</script>
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/01/22</span>
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe604;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">
+                        &#xe601;
+                    </span>
+                    <span class="bdsharebuttonbox">
+                        <a href="#" class="bds_more shareText" data-cmd="more">Share</a>
+                    </span>
+                </span>
+            </div>
+        
+    </div>
+</div>
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <script>
+            var browser = {
+                    versions: function () {
+                        var u = window.navigator.userAgent;
+                        return {
+                            userAgent: u,
+                            trident: u.indexOf('Trident') > -1, //IE内核
+                            presto: u.indexOf('Presto') > -1, //opera内核
+                            webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                            gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                            mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                            ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                            android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                            iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+                            iPad: u.indexOf('iPad') > -1, //是否为iPad
+                            webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+                            weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+                            uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+                        };
+                    }()
+                }
+
+            function fontLoaded(){
+                console.log('font loaded');
+                if (document.getElementsByClassName('site-intro-meta')) {
+                    document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+                    document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+                    var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+                        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+                        if (postIntroTags) {
+                            postIntroTags.classList.add('post-fade-in');
+                        }
+                        if (postIntroMeat) {
+                            postIntroMeat.classList.add('post-fade-in');
+                        }
+                    }
+                }
+                
+            console.log("userAgent:" + browser.versions.userAgent);
+            // UC不支持跨域，所以直接显示
+            if (browser.versions.uc) {
+                console.log("UCBrowser");
+                fontLoaded();
+            } else {
+                WebFont.load({
+                    custom: {
+                        families: ['Oswald-Regular']
+                    },
+                    loading: function () {  //所有字体开始加载
+                        // console.log('loading');
+                    },
+                    active: function () {  //所有字体已渲染
+                        fontLoaded();
+                    },
+                    inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+                        console.log('inactive: timeout');
+                        fontLoaded();
+                    },
+                    timeout: 7000 // Set the timeout to two seconds
+                });
+            }
+        </script>
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>According to the Java lesson that I took,I’ll divide my notes into 3 parts:basic,medium and advanced.So this is the first section of part 1.</p>
+<h1 id="Keyword"><a href="#Keyword" class="headerlink" title="Keyword"></a>Keyword</h1><p>These words have special purposes in <strong>Java</strong>,each one has special meaning to the <strong>Java</strong> compiler,also we need to notice that they are <strong>case sensitive</strong>.<br>For example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">void // this is a keyword</span><br><span class="line">Void // this isn&apos;t a keyword</span><br></pre></td></tr></table></figure></p>
+<p>And here are part of <strong>keywords</strong> that we usually use:</p>
+<table>
+<thead>
+<tr>
+<th>abstract</th>
+<th>boolean</th>
+<th>break</th>
+<th>byte</th>
+<th>case</th>
+<th>catch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td>class</td>
+<td>continue</td>
+<td>default</td>
+<td>do</td>
+<td>double</td>
+</tr>
+<tr>
+<td>else</td>
+<td>extends</td>
+<td>false</td>
+<td>final</td>
+<td>finally</td>
+<td>float</td>
+</tr>
+<tr>
+<td>for</td>
+<td>if</td>
+<td>implements</td>
+<td>import</td>
+<td>instanceof</td>
+<td>int</td>
+</tr>
+<tr>
+<td>interface</td>
+<td>long</td>
+<td>native</td>
+<td>new</td>
+<td>null</td>
+<td>package</td>
+</tr>
+<tr>
+<td>private</td>
+<td>protected</td>
+<td>synchronized</td>
+<td>this</td>
+<td>throw</td>
+<td>throws</td>
+</tr>
+<tr>
+<td>transient</td>
+<td>true</td>
+<td>try</td>
+<td>void</td>
+<td>volatile</td>
+<td>while</td>
+</tr>
+</tbody>
+</table>
+<p>Pratice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;Hello World&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Identifier"><a href="#Identifier" class="headerlink" title="Identifier"></a>Identifier</h1><p>It’s a symbol that we use to name <strong>variable</strong>,<strong>class</strong>,<strong>method</strong> etc.</p>
+<p>When we use <strong>identifier</strong>,there are some rules need to be followed:</p>
+<ol>
+<li>A <strong>identifier</strong> can consists of <strong>letter,number,_,$</strong>,and <strong>can’t starts with number</strong>.</li>
+<li><strong>Identifier</strong> can’t be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
+<li><strong>Identifier</strong> is <strong>case sensitive</strong>.</li>
+<li>Naming a <strong>identifier</strong> better can inform its meaning or purpose.</li>
+</ol>
+<h1 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h1><p>We can see it as a box,we can put anything we want into the box,and replace it with new item at any time.</p>
+<p>In <strong>Java</strong>,we use 3 elements to describe variable:<strong>type</strong>,<strong>name</strong> and <strong>value</strong>.</p>
+<p>Also we need to follow rules like:</p>
+<ol>
+<li>A <strong>variable name</strong> can consists of <strong>letter,number,_,$</strong>,and <strong>can’t starts with number</strong>.</li>
+<li><strong>Variable name</strong> can’t be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
+<li><strong>Variable name</strong> is <strong>case sensitive</strong>.</li>
+<li>Naming a <strong>variable name</strong> better can inform its meaning or purpose.</li>
+</ol>
+<p>In order to form a better program habit,there are several naming methods:</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Hungarian_notation" target="_blank" rel="noopener">Hungarian notation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Camel_case" target="_blank" rel="noopener">Camel case</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Camel_case" target="_blank" rel="noopener">Pascal case</a></li>
+</ol>
+<p>Practice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">		String hobby = &quot;football&quot;; // we declare a variable</span><br><span class="line">		System.out.println(&quot;My hobby is&quot; + hobby); // we bind those two together with &apos;+&apos;,and print it out</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Data-type"><a href="#Data-type" class="headerlink" title="Data type"></a>Data type</h1><p><strong>Java</strong> is a <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank" rel="noopener"><strong>strong typing</strong></a> programming language,it means every data in <strong>Java</strong> has its own type,and it must be define when <strong>Java</strong> compiles,want more details click <a href="https://en.wikipedia.org/wiki/Data_type" target="_blank" rel="noopener">here</a></p>
+<p>Practice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">		String name=&quot;Tom&quot;;</span><br><span class="line">		char sex=&apos;male&apos;;</span><br><span class="line">		int age=18;</span><br><span class="line">		double price=120.5;</span><br><span class="line">		boolean isOK=true;</span><br><span class="line">		System.out.println(name);</span><br><span class="line">		System.out.println(sex);</span><br><span class="line">		System.out.println(num);</span><br><span class="line">		System.out.println(price);</span><br><span class="line">		System.out.println(isOK);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Rules-of-using-variables"><a href="#Rules-of-using-variables" class="headerlink" title="Rules of using variables"></a>Rules of using variables</h1><ol>
+<li><p>Variables must declare before using it.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String name=&quot;Tom&quot;;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>You can declare and initialize variables in the same time.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String name = &quot;Tom&quot;;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Also you can first declareit,and then assign it afterward.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String name;</span><br><span class="line">name = &quot;Tom&quot;;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li><p>You can only assign one value to a variable,but you can change multiple time.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String name = &quot;Tom&quot;;</span><br><span class="line">name = &quot;Jack&quot;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>The variables that you have declared in method <em>main</em> must be assigned first,and then you can output it.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String name=&quot;Tom&quot;;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Although you might not have error shows up,but in real life development,I suggest only using english when you naming variables.It’s easier to have safety issues if you use other languages,such as having gibberish when you are working on cross platform.</p>
+</li>
+</ol>
+<h1 id="Auto-type-conversion"><a href="#Auto-type-conversion" class="headerlink" title="Auto type conversion"></a>Auto type conversion</h1><p>In our program,we usually need to convert between differnet primitive data types of data.For example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int num1 = 82;</span><br><span class="line">double num2 = num1;</span><br><span class="line">System.out.println(num2);</span><br></pre></td></tr></table></figure></p>
+<p>This kind of conversion is called <strong>auto type conversion</strong>.Of course,it needs to match particular antecedents:</p>
+<ol>
+<li>Target type is compatible with source type,like <strong>double</strong> is compatible with <strong>int</strong>,but <strong>char</strong> isn’t compatible with <strong>int</strong>.</li>
+<li>Target type must <strong>larger</strong> than source type.</li>
+</ol>
+<h1 id="Forced-type-conversion"><a href="#Forced-type-conversion" class="headerlink" title="Forced type conversion"></a>Forced type conversion</h1><p>Although auto type conversion is pretty convenient,but it can’t match all of our programming needs.So we need something called <strong>forced type conversion</strong>.</p>
+<ul>
+<li>syntax: <strong>(target type)value</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double num1 = 75.8;</span><br><span class="line">int num2 = (int)num1;</span><br><span class="line">System.out.println(num2);</span><br></pre></td></tr></table></figure>
+<p>and then you’ll have<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">75</span><br></pre></td></tr></table></figure></p>
+<p>You can see ,it just simply remove everything to the right of the decimal point(including decimal point itself).</p>
+<p>Therefore,it’s pretty clear now,<strong>using forced type conversion might cause data lost</strong>,you need to be careful when you using it.</p>
+<h1 id="Constant"><a href="#Constant" class="headerlink" title="Constant"></a>Constant</h1><p>We see it as a kind of special variable,when its value has been assigned,it doesn’t allow to change during the operation of your program.</p>
+<ul>
+<li>syntax: <strong>final  type name = value;</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">final String NAME = &quot;Tom&quot;;</span><br><span class="line">final double PI = 3.14;</span><br></pre></td></tr></table></figure>
+<p>Using constant in your program can improve maintainability,and notice we normally use <strong>capital letter</strong> while naming a constant.</p>
+<h1 id="Annotation"><a href="#Annotation" class="headerlink" title="Annotation"></a>Annotation</h1><p>When we are coding,usually need to add some notes attach to the source code,in order to describe its purpose.It’s a important thing when we talk about coding.</p>
+<p>There are three kinds of annotation:<br></p>
+<ol>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> *</span><br><span class="line"> *@authur Seraphcex</span><br><span class="line"> *@version v1.0</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br></p>
+<ol>
+<li><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line"> *this can include multiple lines</span><br><span class="line"> *</span><br><span class="line"> *</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><br></p>
+<ol>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//single line</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>Annotation won’t be executed during the operation,more details click <a href="https://en.wikipedia.org/wiki/Java_annotation" target="_blank" rel="noopener">here</a>.</p>
+
+    </article>
+    <!-- 前后页  -->
+    <ul class="post-pager">
+        
+        
+            <li class="previous">
+                <a href= "/2018/01/20/2018-01-20-hello-world/" title= Hello World >
+                    <span>Previous Post</span>
+                    <span>Hello World</span>
+                </a>
+            </li>
+        
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:caozehua926@hotmail.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/Seraphcex" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+            
+                <a href="//stackoverflow.com/users/8766674/seraphcex" class="iconfont-archer stack-overflow" target="_blank" title="stack-overflow"></a>
+            
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">Theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+        <span id="busuanzi_container_site_pv">VISITOR VOLUME: <span id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper">
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Keyword"><span class="toc-number">1.</span> <span class="toc-text">Keyword</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Identifier"><span class="toc-number">2.</span> <span class="toc-text">Identifier</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variable"><span class="toc-number">3.</span> <span class="toc-text">Variable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Data-type"><span class="toc-number">4.</span> <span class="toc-text">Data type</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rules-of-using-variables"><span class="toc-number">5.</span> <span class="toc-text">Rules of using variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Auto-type-conversion"><span class="toc-number">6.</span> <span class="toc-text">Auto type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Forced-type-conversion"><span class="toc-number">7.</span> <span class="toc-text">Forced type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Constant"><span class="toc-number">8.</span> <span class="toc-text">Constant</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Annotation"><span class="toc-number">9.</span> <span class="toc-text">Annotation</span></a></li></ol>
+    </div>
+    
+    <div class="back-top">&#xe639;</div>
+    <div class="sidebar">
+    <div class="sidebar-header sidebar-header-show-archive">
+        <div class="sidebar-category">
+            <span class="sidebar-archive-link"><span class="iconfont-archer">&#xe67d;</span>Archive</span>
+            <span class="sidebar-tags-link"><span class="iconfont-archer">&#xe610;</span>Tag</span>
+        </div>
+    </div>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-archive">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 2 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2018/01/22/2018-01-22-java-basic-variable-and-constant/" >Java Basic--Variable and Constant</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2018/01/20/2018-01-20-hello-world/" >Hello World</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-tags">
+    <div class="sidebar-tags-name">
+    
+    </div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tag-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var jsInfo = {
+        root: '/'
+    }
+</script>
+    <!-- 不蒜子  -->
+    
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ统计  -->
+    
+    </div>
+    </body>
+</html>
+
+
