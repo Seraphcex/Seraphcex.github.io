@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
     <title>
         
-        Java Basic--Variable and Constant · Seraphcex&#39;s Blog
+        Seraphcex&#39;s Blog
         
     </title>
     <link rel="icon" href= /assets/favicon.ico>
@@ -72,7 +72,7 @@
                 <a href="/" >Seraphcex&#39;s Blog.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">Java Basic--Variable and Constant</a>
+                <a href="#" class="post-name"></a>
             </div>
     </div>
     
@@ -93,7 +93,7 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            Java Basic--Variable and Constant
+            [Untitled Post]
             <!-- 404 -->
             
         </h1>
@@ -109,16 +109,10 @@
         
             <!-- 文章页标签  -->
             
-                <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-href = Java,Notes>Java,Notes</a>
-    
-</div>
-            
             <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = "/static/api/js/share.js"];</script>
             <div class="post-intro-meta">
                 <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                <span class="post-intro-time">2018/01/22</span>
+                <span class="post-intro-time">2018/03/06</span>
                 <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                     <span class="iconfont-archer">&#xe604;</span>
                     <span id="busuanzi_value_page_pv"></span>
@@ -201,12 +195,316 @@
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>According to the Java lesson that I took,I’ll divide my notes into 3 parts:basic,medium and advanced.So this is the first section of part 1.</p>
-<h1 id="Keyword"><a href="#Keyword" class="headerlink" title="Keyword"></a>Keyword</h1><p>These words have special purposes in <strong>Java</strong>,each one has special meaning to the <strong>Java</strong> compiler,also we need to notice that they are <strong>case sensitive</strong>.<br>For example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">void // this is a keyword</span><br><span class="line">Void // this isn&apos;t a keyword</span><br></pre></td></tr></table></figure></p>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  /*
+      https://gist.github.com/andyferra/2554919
+  */
+  
+  body {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    padding: 30px; }
+  
+  body > *:first-child {
+    margin-top: 0 !important; }
+  body > *:last-child {
+    margin-bottom: 0 !important; }
+  
+  a {
+    color: #4183C4; }
+  a.absent {
+    color: #cc0000; }
+  a.anchor {
+    display: block;
+    padding-left: 30px;
+    margin-left: -30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 20px 0 10px;
+    padding: 0;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    cursor: text;
+    position: relative; }
+  
+  h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+    background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
+    text-decoration: none; }
+  
+  h1 tt, h1 code {
+    font-size: inherit; }
+  
+  h2 tt, h2 code {
+    font-size: inherit; }
+  
+  h3 tt, h3 code {
+    font-size: inherit; }
+  
+  h4 tt, h4 code {
+    font-size: inherit; }
+  
+  h5 tt, h5 code {
+    font-size: inherit; }
+  
+  h6 tt, h6 code {
+    font-size: inherit; }
+  
+  h1 {
+    font-size: 28px;
+    color: black; }
+  
+  h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+    color: black; }
+  
+  h3 {
+    font-size: 18px; }
+  
+  h4 {
+    font-size: 16px; }
+  
+  h5 {
+    font-size: 14px; }
+  
+  h6 {
+    color: #777777;
+    font-size: 14px; }
+  
+  p, blockquote, ul, ol, dl, li, table, pre {
+    margin: 15px 0; }
+  
+  hr {
+    background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
+    border: 0 none;
+    color: #cccccc;
+    height: 4px;
+    padding: 0; }
+  
+  body > h2:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+  body > h1:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+    body > h1:first-child + h2 {
+      margin-top: 0;
+      padding-top: 0; }
+  body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+    margin-top: 0;
+    padding-top: 0; }
+  
+  a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+    margin-top: 0;
+    padding-top: 0; }
+  
+  h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+    margin-top: 0; }
+  
+  li p.first {
+    display: inline-block; }
+  
+  ul, ol {
+    padding-left: 30px; }
+  
+  ul :first-child, ol :first-child {
+    margin-top: 0; }
+  
+  ul :last-child, ol :last-child {
+    margin-bottom: 0; }
+  
+  dl {
+    padding: 0; }
+    dl dt {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0;
+      margin: 15px 0 5px; }
+      dl dt:first-child {
+        padding: 0; }
+      dl dt > :first-child {
+        margin-top: 0; }
+      dl dt > :last-child {
+        margin-bottom: 0; }
+    dl dd {
+      margin: 0 0 15px;
+      padding: 0 15px; }
+      dl dd > :first-child {
+        margin-top: 0; }
+      dl dd > :last-child {
+        margin-bottom: 0; }
+  
+  blockquote {
+    border-left: 4px solid #dddddd;
+    padding: 0 15px;
+    color: #777777; }
+    blockquote > :first-child {
+      margin-top: 0; }
+    blockquote > :last-child {
+      margin-bottom: 0; }
+  
+  table {
+    padding: 0; }
+    table tr {
+      border-top: 1px solid #cccccc;
+      background-color: white;
+      margin: 0;
+      padding: 0; }
+      table tr:nth-child(2n) {
+        background-color: #f8f8f8; }
+      table tr th {
+        font-weight: bold;
+        border: 1px solid #cccccc;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px; }
+      table tr td {
+        border: 1px solid #cccccc;
+        text-align: left;
+        margin: 0;
+        padding: 6px 13px; }
+      table tr th :first-child, table tr td :first-child {
+        margin-top: 0; }
+      table tr th :last-child, table tr td :last-child {
+        margin-bottom: 0; }
+  
+  img {
+    max-width: 100%; }
+  
+  span.frame {
+    display: block;
+    overflow: hidden; }
+    span.frame > span {
+      border: 1px solid #dddddd;
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin: 13px 0 0;
+      padding: 7px;
+      width: auto; }
+    span.frame span img {
+      display: block;
+      float: left; }
+    span.frame span span {
+      clear: both;
+      color: #333333;
+      display: block;
+      padding: 5px 0 0; }
+  span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both; }
+    span.align-center > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: center; }
+    span.align-center span img {
+      margin: 0 auto;
+      text-align: center; }
+  span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both; }
+    span.align-right > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px 0 0;
+      text-align: right; }
+    span.align-right span img {
+      margin: 0;
+      text-align: right; }
+  span.float-left {
+    display: block;
+    margin-right: 13px;
+    overflow: hidden;
+    float: left; }
+    span.float-left span {
+      margin: 13px 0 0; }
+  span.float-right {
+    display: block;
+    margin-left: 13px;
+    overflow: hidden;
+    float: right; }
+    span.float-right > span {
+      display: block;
+      overflow: hidden;
+      margin: 13px auto 0;
+      text-align: right; }
+  
+  code, tt {
+    margin: 0 2px;
+    padding: 0 5px;
+    white-space: nowrap;
+    border: 1px solid #eaeaea;
+    background-color: #f8f8f8;
+    border-radius: 3px; }
+  
+  pre code {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    border: none;
+    background: transparent; }
+  
+  .highlight pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px; }
+  
+  pre {
+    background-color: #f8f8f8;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px; }
+    pre code, pre tt {
+      background-color: transparent;
+      border: none; }
+  
+  
+  </style>
+</head>
+<body>
+<hr>
+<p>title: Java Basic--Variable and Constant<br>
+date: 2018-01-22 16:36:56<br>
+tags: Java,Notes<br>
+---<br>
+According to the Java lesson that I took,I'll divide my notes into 3 parts:basic,medium and advanced.So this is the first section of part 1.</p>
+<h1 id="keyword">Keyword</h1>
+<p>These words have special purposes in <strong>Java</strong>,each one has special meaning to the <strong>Java</strong> compiler,also we need to notice that they are <strong>case sensitive</strong>.<br>
+For example</p>
+<pre><code>void // this is a keyword
+Void // this isn&#39;t a keyword</code></pre>
 <p>And here are part of <strong>keywords</strong> that we usually use:</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>abstract</th>
 <th>boolean</th>
 <th>break</th>
@@ -216,7 +514,7 @@
 </tr>
 </thead>
 <tbody>
-<tr>
+<tr class="odd">
 <td>char</td>
 <td>class</td>
 <td>continue</td>
@@ -224,7 +522,7 @@
 <td>do</td>
 <td>double</td>
 </tr>
-<tr>
+<tr class="even">
 <td>else</td>
 <td>extends</td>
 <td>false</td>
@@ -232,7 +530,7 @@
 <td>finally</td>
 <td>float</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>for</td>
 <td>if</td>
 <td>implements</td>
@@ -240,7 +538,7 @@
 <td>instanceof</td>
 <td>int</td>
 </tr>
-<tr>
+<tr class="even">
 <td>interface</td>
 <td>long</td>
 <td>native</td>
@@ -248,7 +546,7 @@
 <td>null</td>
 <td>package</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>private</td>
 <td>protected</td>
 <td>synchronized</td>
@@ -256,7 +554,7 @@
 <td>throw</td>
 <td>throws</td>
 </tr>
-<tr>
+<tr class="even">
 <td>transient</td>
 <td>true</td>
 <td>try</td>
@@ -266,21 +564,28 @@
 </tr>
 </tbody>
 </table>
-<p>Pratice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;Hello World&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="Identifier"><a href="#Identifier" class="headerlink" title="Identifier"></a>Identifier</h1><p>It’s a symbol that we use to name <strong>variable</strong>,<strong>class</strong>,<strong>method</strong> etc.</p>
+<p>Pratice</p>
+<pre><code>public class HelloWorld {
+    public static void main(String[] args){
+        System.out.println(&quot;Hello World&quot;);
+    }
+}</code></pre>
+<h1 id="identifier">Identifier</h1>
+<p>It's a symbol that we use to name <strong>variable</strong>,<strong>class</strong>,<strong>method</strong> etc.</p>
 <p>When we use <strong>identifier</strong>,there are some rules need to be followed:</p>
 <ol>
-<li>A <strong>identifier</strong> can consists of <strong>letter,number,_,$</strong>,and <strong>can’t starts with number</strong>.</li>
-<li><strong>Identifier</strong> can’t be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
+<li>A <strong>identifier</strong> can consists of **letter,number,_,$<strong>,and </strong>can't starts with number**.</li>
+<li><strong>Identifier</strong> can't be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
 <li><strong>Identifier</strong> is <strong>case sensitive</strong>.</li>
 <li>Naming a <strong>identifier</strong> better can inform its meaning or purpose.</li>
 </ol>
-<h1 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h1><p>We can see it as a box,we can put anything we want into the box,and replace it with new item at any time.</p>
+<h1 id="variable">Variable</h1>
+<p>We can see it as a box,we can put anything we want into the box,and replace it with new item at any time.</p>
 <p>In <strong>Java</strong>,we use 3 elements to describe variable:<strong>type</strong>,<strong>name</strong> and <strong>value</strong>.</p>
 <p>Also we need to follow rules like:</p>
 <ol>
-<li>A <strong>variable name</strong> can consists of <strong>letter,number,_,$</strong>,and <strong>can’t starts with number</strong>.</li>
-<li><strong>Variable name</strong> can’t be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
+<li>A <strong>variable name</strong> can consists of **letter,number,_,$<strong>,and </strong>can't starts with number**.</li>
+<li><strong>Variable name</strong> can't be <strong>Java keyword</strong> or <strong>reserved word</strong>.</li>
 <li><strong>Variable name</strong> is <strong>case sensitive</strong>.</li>
 <li>Naming a <strong>variable name</strong> better can inform its meaning or purpose.</li>
 </ol>
@@ -290,80 +595,125 @@
 <li><a href="https://en.wikipedia.org/wiki/Camel_case" target="_blank" rel="noopener">Camel case</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Camel_case" target="_blank" rel="noopener">Pascal case</a></li>
 </ol>
-<p>Practice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">		String hobby = &quot;football&quot;; // we declare a variable</span><br><span class="line">		System.out.println(&quot;My hobby is&quot; + hobby); // we bind those two together with &apos;+&apos;,and print it out</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="Data-type"><a href="#Data-type" class="headerlink" title="Data type"></a>Data type</h1><p><strong>Java</strong> is a <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank" rel="noopener"><strong>strong typing</strong></a> programming language,it means every data in <strong>Java</strong> has its own type,and it must be define when <strong>Java</strong> compiles,want more details click <a href="https://en.wikipedia.org/wiki/Data_type" target="_blank" rel="noopener">here</a></p>
-<p>Practice<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">		String name=&quot;Tom&quot;;</span><br><span class="line">		char sex=&apos;male&apos;;</span><br><span class="line">		int age=18;</span><br><span class="line">		double price=120.5;</span><br><span class="line">		boolean isOK=true;</span><br><span class="line">		System.out.println(name);</span><br><span class="line">		System.out.println(sex);</span><br><span class="line">		System.out.println(num);</span><br><span class="line">		System.out.println(price);</span><br><span class="line">		System.out.println(isOK);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="Rules-of-using-variables"><a href="#Rules-of-using-variables" class="headerlink" title="Rules of using variables"></a>Rules of using variables</h1><ol>
-<li><p>Variables must declare before using it.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String name=&quot;Tom&quot;;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>You can declare and initialize variables in the same time.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String name = &quot;Tom&quot;;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>Also you can first declareit,and then assign it afterward.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String name;</span><br><span class="line">name = &quot;Tom&quot;;</span><br></pre></td></tr></table></figure></p>
+<p>Practice</p>
+<pre><code>public class HelloWorld{
+    public static void main(String[] args) {
+        String hobby = &quot;football&quot;; // we declare a variable
+        System.out.println(&quot;My hobby is&quot; + hobby); // we bind those two together with &#39;+&#39;,and print it out
+    }
+}</code></pre>
+<h1 id="data-type">Data type</h1>
+<p><strong>Java</strong> is a <a href="https://en.wikipedia.org/wiki/Strong_and_weak_typing" target="_blank" rel="noopener"><strong>strong typing</strong></a> programming language,it means every data in <strong>Java</strong> has its own type,and it must be define when <strong>Java</strong> compiles,want more details click <a href="https://en.wikipedia.org/wiki/Data_type" target="_blank" rel="noopener">here</a></p>
+<p>Practice</p>
+<pre><code>public class HelloWorld{
+    public static void main(String[] args) {
+        String name=&quot;Tom&quot;;
+        char sex=&#39;male&#39;;
+        int age=18;
+        double price=120.5;
+        boolean isOK=true;
+        System.out.println(name);
+        System.out.println(sex);
+        System.out.println(num);
+        System.out.println(price);
+        System.out.println(isOK);
+    }
+}</code></pre>
+<h1 id="rules-of-using-variables">Rules of using variables</h1>
 <ol>
+<li><p>Variables must declare before using it.</p>
+<pre><code>public class HelloWorld{
+public static void main(String[] args) {
+    String name=&quot;Tom&quot;;
+    System.out.println(name);
+}
+}</code></pre></li>
+<li><p>You can declare and initialize variables in the same time.</p>
+<pre><code>String name = &quot;Tom&quot;;</code></pre>
+<p>Also you can first declareit,and then assign it afterward.</p>
+<pre><code>String name;
+name = &quot;Tom&quot;;</code></pre></li>
 <li><p>You can only assign one value to a variable,but you can change multiple time.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String name = &quot;Tom&quot;;</span><br><span class="line">name = &quot;Jack&quot;;</span><br></pre></td></tr></table></figure>
-</li>
+<pre><code>String name = &quot;Tom&quot;;
+name = &quot;Jack&quot;;</code></pre></li>
 <li><p>The variables that you have declared in method <em>main</em> must be assigned first,and then you can output it.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class HelloWorld&#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        String name=&quot;Tom&quot;;</span><br><span class="line">        System.out.println(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Although you might not have error shows up,but in real life development,I suggest only using english when you naming variables.It’s easier to have safety issues if you use other languages,such as having gibberish when you are working on cross platform.</p>
-</li>
+<pre><code>public class HelloWorld{
+public static void main(String[] args) {
+    String name=&quot;Tom&quot;;
+    System.out.println(name);
+}
+}</code></pre></li>
+<li><p>Although you might not have error shows up,but in real life development,I suggest only using english when you naming variables.It's easier to have safety issues if you use other languages,such as having gibberish when you are working on cross platform.</p></li>
 </ol>
-<h1 id="Auto-type-conversion"><a href="#Auto-type-conversion" class="headerlink" title="Auto type conversion"></a>Auto type conversion</h1><p>In our program,we usually need to convert between differnet primitive data types of data.For example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int num1 = 82;</span><br><span class="line">double num2 = num1;</span><br><span class="line">System.out.println(num2);</span><br></pre></td></tr></table></figure></p>
+<h1 id="auto-type-conversion">Auto type conversion</h1>
+<p>In our program,we usually need to convert between differnet primitive data types of data.For example:</p>
+<pre><code>int num1 = 82;
+double num2 = num1;
+System.out.println(num2);</code></pre>
 <p>This kind of conversion is called <strong>auto type conversion</strong>.Of course,it needs to match particular antecedents:</p>
 <ol>
-<li>Target type is compatible with source type,like <strong>double</strong> is compatible with <strong>int</strong>,but <strong>char</strong> isn’t compatible with <strong>int</strong>.</li>
+<li>Target type is compatible with source type,like <strong>double</strong> is compatible with <strong>int</strong>,but <strong>char</strong> isn't compatible with <strong>int</strong>.</li>
 <li>Target type must <strong>larger</strong> than source type.</li>
 </ol>
-<h1 id="Forced-type-conversion"><a href="#Forced-type-conversion" class="headerlink" title="Forced type conversion"></a>Forced type conversion</h1><p>Although auto type conversion is pretty convenient,but it can’t match all of our programming needs.So we need something called <strong>forced type conversion</strong>.</p>
+<h1 id="forced-type-conversion">Forced type conversion</h1>
+<p>Although auto type conversion is pretty convenient,but it can't match all of our programming needs.So we need something called <strong>forced type conversion</strong>.</p>
 <ul>
 <li>syntax: <strong>(target type)value</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double num1 = 75.8;</span><br><span class="line">int num2 = (int)num1;</span><br><span class="line">System.out.println(num2);</span><br></pre></td></tr></table></figure>
-<p>and then you’ll have<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">75</span><br></pre></td></tr></table></figure></p>
+<pre><code>double num1 = 75.8;
+int num2 = (int)num1;
+System.out.println(num2);</code></pre>
+<p>and then you'll have</p>
+<pre><code>75</code></pre>
 <p>You can see ,it just simply remove everything to the right of the decimal point(including decimal point itself).</p>
-<p>Therefore,it’s pretty clear now,<strong>using forced type conversion might cause data lost</strong>,you need to be careful when you using it.</p>
-<h1 id="Constant"><a href="#Constant" class="headerlink" title="Constant"></a>Constant</h1><p>We see it as a kind of special variable,when its value has been assigned,it doesn’t allow to change during the operation of your program.</p>
+<p>Therefore,it's pretty clear now,<strong>using forced type conversion might cause data lost</strong>,you need to be careful when you using it.</p>
+<h1 id="constant">Constant</h1>
+<p>We see it as a kind of special variable,when its value has been assigned,it doesn't allow to change during the operation of your program.</p>
 <ul>
-<li>syntax: <strong>final  type name = value;</strong></li>
+<li>syntax: <strong>final type name = value;</strong></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">final String NAME = &quot;Tom&quot;;</span><br><span class="line">final double PI = 3.14;</span><br></pre></td></tr></table></figure>
+<pre><code>final String NAME = &quot;Tom&quot;;
+final double PI = 3.14;</code></pre>
 <p>Using constant in your program can improve maintainability,and notice we normally use <strong>capital letter</strong> while naming a constant.</p>
-<h1 id="Annotation"><a href="#Annotation" class="headerlink" title="Annotation"></a>Annotation</h1><p>When we are coding,usually need to add some notes attach to the source code,in order to describe its purpose.It’s a important thing when we talk about coding.</p>
+<h1 id="annotation">Annotation</h1>
+<p>When we are coding,usually need to add some notes attach to the source code,in order to describe its purpose.It's a important thing when we talk about coding.</p>
 <p>There are three kinds of annotation:<br></p>
 <ol>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> *</span><br><span class="line"> *@authur Seraphcex</span><br><span class="line"> *@version v1.0</span><br><span class="line"> */</span><br></pre></td></tr></table></figure>
-</li>
+<li>```<br>
+/**</li>
 </ol>
-<p><br></p>
+<ul>
+<li><a href="mailto:*@authur" target="_blank" rel="noopener">*@authur</a> Seraphcex<br>
+<a href="mailto:*@version" target="_blank" rel="noopener">*@version</a> v1.0<br>
+*/<br>
+```<br>
+<br></li>
+</ul>
 <ol>
-<li><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line"> *this can include multiple lines</span><br><span class="line"> *</span><br><span class="line"> *</span><br></pre></td></tr></table></figure>
-</li>
+<li><br><br>
+```<br>
+/<em><br>
+</em>this can include multiple lines</li>
 </ol>
-<p><br></p>
+<ul>
+<li></li>
+<li>```<br>
+<br></li>
+</ul>
 <ol>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">//single line</span><br></pre></td></tr></table></figure>
-</li>
+<li><pre><code>//single line</code></pre>
+Annotation won't be executed during the operation,more details click <a href="https://en.wikipedia.org/wiki/Java_annotation" target="_blank" rel="noopener">here</a>.</li>
 </ol>
-<p>Annotation won’t be executed during the operation,more details click <a href="https://en.wikipedia.org/wiki/Java_annotation" target="_blank" rel="noopener">here</a>.</p>
+</body>
+</html>
 
     </article>
     <!-- 前后页  -->
     <ul class="post-pager">
         
-            <li class="next">
-                <a href= "/2018/03/06/~nlx0vnjq.2o2/" title=  >
-                    <span>Next Post</span>
-                    <span>[Untitled Post]</span>
-                </a>
-            </li>
-        
         
             <li class="previous">
-                <a href= "/2018/01/22/~myndd02c.if2/" title= Java Basic--Variable and Constant >
+                <a href= "/2018/01/22/2018-01-22-java-basic-variable-and-constant/" title= Java Basic--Variable and Constant >
                     <span>Previous Post</span>
                     <span>Java Basic--Variable and Constant</span>
                 </a>
@@ -433,7 +783,7 @@
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Keyword"><span class="toc-number">1.</span> <span class="toc-text">Keyword</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Identifier"><span class="toc-number">2.</span> <span class="toc-text">Identifier</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variable"><span class="toc-number">3.</span> <span class="toc-text">Variable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Data-type"><span class="toc-number">4.</span> <span class="toc-text">Data type</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rules-of-using-variables"><span class="toc-number">5.</span> <span class="toc-text">Rules of using variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Auto-type-conversion"><span class="toc-number">6.</span> <span class="toc-text">Auto type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Forced-type-conversion"><span class="toc-number">7.</span> <span class="toc-text">Forced type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Constant"><span class="toc-number">8.</span> <span class="toc-text">Constant</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Annotation"><span class="toc-number">9.</span> <span class="toc-text">Annotation</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#keyword"><span class="toc-number">1.</span> <span class="toc-text">Keyword</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#identifier"><span class="toc-number">2.</span> <span class="toc-text">Identifier</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#variable"><span class="toc-number">3.</span> <span class="toc-text">Variable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#data-type"><span class="toc-number">4.</span> <span class="toc-text">Data type</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#rules-of-using-variables"><span class="toc-number">5.</span> <span class="toc-text">Rules of using variables</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#auto-type-conversion"><span class="toc-number">6.</span> <span class="toc-text">Auto type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#forced-type-conversion"><span class="toc-number">7.</span> <span class="toc-text">Forced type conversion</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#constant"><span class="toc-number">8.</span> <span class="toc-text">Constant</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#annotation"><span class="toc-number">9.</span> <span class="toc-text">Annotation</span></a></li></ol>
     </div>
     
     <div class="back-top">&#xe639;</div>
